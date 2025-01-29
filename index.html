@@ -3,9 +3,69 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
 	<title>Revo's Profile Card</title>
 </head>
 <body>
-	
+	<main>
+		<div class="profilePicture">
+			<img src="https://ca.slack-edge.com/T086NG3N69Y-U08ALCL2J2Z-9948ea6f5b3c-192" alt="my-slack-dp"  data-testid="profilePicture">
+		</div>
+
+		<div>
+			<h3 class="title">Name</h3>
+			<h2 class="fullName" data-testid="fullName">Oghenerevo</h2>
+			<p class="jobTitle" data-testid="jobTitle">Frontend Engineer</p>
+		</div>
+
+		<div>
+			<h3 class="title">About Me</h3>
+			<p data-testid="shortBio">
+				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus sequi cumque sapiente aliquid. Earum minus aliquam fugit 
+				aspernatur tenetur veniam eligendi cum quisquam minima voluptates molestiae ratione, veritatis aut. Minus at sequi, harum 
+				aliquid quo fuga natus velit quasi beatae deleniti facere porro fugit hic rem ab, assumenda amet reprehenderit tenetur 
+				adipisci consequatur ex vitae, dignissimos odio. Illum nostrum tempore, dolorem voluptatum vel veniam quae suscipit quam, 
+				facere atque, hic a perferendis asperiores dicta velit consequuntur consequatur cum sit. Deserunt voluptatibus earum minima 
+				dolor, voluptates possimus rerum placeat reiciendis commodi eum, autem nisi numquam. Tenetur illo placeat fuga dolore quos 
+				facere, doloremque cum voluptatum nihil. Voluptates aliquam, alias id cum doloremque inventore? Iste blanditiis cum quam 
+				dicta saepe atque obcaecati minus. Tempore totam facilis, molestias eaque reiciendis hic aperiam vel voluptatibus dolorem 
+				voluptatem sequi placeat praesentium temporibus atque earum ducimus unde sint ipsum veritatis quaerat possimus eligendi! 
+				Adipisci veniam iure sapiente deserunt nesciunt vitae reprehenderit hic, beatae consectetur corrupti doloribus nulla a 
+				explicabo excepturi. Sint adipisci ipsum eum corporis natus voluptates quia sequi, nobis consectetur tempore officia recusandae,
+				illo molestias sit quo ea facere vitae! Quasi natus delectus beatae quo eos ab at totam repellat voluptate tempore dignissimos,
+				id voluptas.
+			</p>
+		</div>
+
+		<div>
+			<h3 class="title">Current Location</h3>
+			<p data-testid="currentLocation">Ile-Ife, Osun, Nigeria</p>
+		</div>
+
+		<div>
+			<h3 class="title">Email</h3>
+			<a href="mailto:oghenerevo@outlook.com" data-testid="emailAddress">oghenerevo@outlook.com</a>
+		</div>
+
+		<div class="socialLinks" data-testid="socialLinks">
+			<h3 class="title">Social links</h3>
+			<ul>
+				<li>
+					<a href="https://x.com/thekingrevo?s=09">X (formerly Twitter)</a>
+				</li>
+
+				<li>
+					<a href="https://github.com/Oghenerevo" target="_blank">Github</a>
+				</li>
+			</ul>
+		</div>
+
+		<div>
+			<h3 class="title">Current UTC Time</h3>
+			<!-- <p class="utcTime" data-testid="currentTimeUTC">01:00 pm</p> -->
+			<p id="utc-time" data-testid="currentTimeUTC"></p>
+		</div>
+	</main>
 </body>
+<script src="app.js"></script>
 </html>
